@@ -1,0 +1,110 @@
+/* ===== Global ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    text-align: center;
+    color: #333;
+}
+
+/* ===== Header ===== */
+header {
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* ===== Navigation ===== */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd369;
+}
+
+/* ===== Content Card ===== */
+.content, .game-container {
+    background: #ffffff;
+    width: 85%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* ===== Buttons ===== */
+.btn, button {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover, button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ===== Game Board ===== */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    gap: 15px;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+/* ===== Cards ===== */
+.card {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #2c2c54, #40407a);
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.4s, background 0.4s;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Open / matched card */
+.card.open {
+    background: linear-gradient(135deg, #20bf6b, #26de81);
+}
+
+
+/* ===== Status Text ===== */
+#status {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #444;
+}

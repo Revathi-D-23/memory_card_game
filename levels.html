@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Level</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Select Game Level</h1>
+</header>
+
+<section class="content">
+    <button onclick="setLevel(4)">🟢 Easy (4 Pairs)</button><br><br>
+    <button onclick="setLevel(6)">🟡 Medium (6 Pairs)</button><br><br>
+    <button onclick="setLevel(8)">🔴 Hard (8 Pairs)</button>
+</section>
+
+<script>
+function setLevel(pairs) {
+    localStorage.setItem("pairs", pairs);
+    window.location.href = "game.html";
+}
+</script>
+
+</body>
+</html>
